@@ -6,7 +6,7 @@ import re
 @st.cache_resource
 def load_artifacts():
     try:
-        with open("svm_review_model.pkl", 'rb') as f:
+        with open("model.pkl", 'rb') as f:
             model = pickle.load(f)
         with open("tfidf_vectorizer.pkl", 'rb') as f:
             vectorizer = pickle.load(f)

@@ -1,7 +1,7 @@
 import pickle
 import re
 
-MODEL_PATH = "svm_review_model.pkl"
+MODEL_PATH = "model.pkl"
 VECTORIZER_PATH = "tfidf_vectorizer.pkl"
 
 def clean_text(text):

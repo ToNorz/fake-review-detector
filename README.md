@@ -12,8 +12,8 @@ Specifically, it uses **Review Dimension Features** by converting the review tex
 The model is trained on the **Deceptive Opinion Spam Corpus** (Ott et al.), which contains 1,600 hotel reviews (800 truthful, 800 deceptive). The dataset is located at `dataset/deceptive.csv`.
 
 ## Project Structure
-- `false_review_analyzer.py`: Main script to load the dataset, train the SVM model, and evaluate its accuracy.
-- `predict_review.py`: A script demonstrating how to load the saved model and vectorizer to predict whether a custom text review is fake or real in the terminal.
+- `train.py`: Main script to load the dataset, train the SVM model, and evaluate its accuracy.
+- `predict.py`: A script demonstrating how to load the saved model and vectorizer to predict whether a custom text review is fake or real in the terminal.
 - `app.py`: A **Web UI** built with Streamlit to present the model interactively.
 - `requirements.txt`: Python dependencies needed to run the project.
 
@@ -34,7 +34,7 @@ The model is trained on the **Deceptive Opinion Spam Corpus** (Ott et al.), whic
 1. **Train the model**:
    Run the training script to build the model from the dataset and generate the `.pkl` files and confusion matrix plot.
    ```bash
-   python false_review_analyzer.py
+   python train.py
    ```
 2. **Present the Web UI (Recommended)**:
    Run the Streamlit app to show off an interactive web interface for your presentation.
@@ -44,5 +44,5 @@ The model is trained on the **Deceptive Opinion Spam Corpus** (Ott et al.), whic
 3. **Test in Terminal**:
    Run the prediction script to see the model classify custom reviews in the command line.
    ```bash
-   python predict_review.py
+   python predict.py
    ```

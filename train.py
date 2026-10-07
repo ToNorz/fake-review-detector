@@ -18,7 +18,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report, accuracy_score, confusion_matrix
 
 DATASET_PATH = "dataset/deceptive.csv"
-MODEL_PATH = "svm_review_model.pkl"
+MODEL_PATH = "model.pkl"
 VECTORIZER_PATH = "tfidf_vectorizer.pkl"
 
 def load_dataset(filepath):
